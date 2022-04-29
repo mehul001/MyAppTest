@@ -1,0 +1,34 @@
+<ion-view title="Tech Test | Add Order Entry">
+    <ion-content padding="true">
+
+        <div class="card">
+            <div class="col">               
+                <ion-input class="item item-input">
+                    <ion-label>Name</ion-label>
+                    <input ng-model="data.name" type="text" placeholder="Enter Name" />
+                </ion-input>                
+            </div>
+
+            <div class="col">               
+                <ion-input class="item item-input">
+                    <ion-label>Address</ion-label>
+                    <input ng-model="data.address" type="text" placeholder="Enter Address" />
+                </ion-input>                
+            </div>
+
+            <div class="col">               
+                <ion-input class="item item-input">
+                    <ion-label>Item</ion-label>
+                    <input ng-model="data.item" type="text" placeholder="Enter Item" />
+                </ion-input>                
+            </div>
+        </div>
+    </ion-content>
+
+    <ion-footer-bar id="footerbar" class="bar bar-footer bar-clear">
+        <div class='button-bar'>
+            <a class='button button-assertive icon-left ion-trash-a' ng-click='clearData()'>Clear</a>
+            <a class='button button-balanced icon-right ion-chevron-right' ng-click='submitData()'>Submit</a>
+        </div>
+    </ion-footer-bar>
+  </ion-view>

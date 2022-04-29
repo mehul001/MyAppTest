@@ -1,0 +1,43 @@
+<ion-view title="Tech Test | View Order Entries">
+    <ion-content padding="true">
+
+        <div class="card" ng-repeat="record in data">
+            <div class="row">
+                <div class="col">
+                    <strong>Name: </strong>
+                </div>
+
+                <div class="col">
+                    {{ record.name }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <strong>Address: </strong>
+                </div>
+
+                <div class="col">
+                    {{ record.address }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <strong>Item: </strong>
+                </div>
+
+                <div class="col">
+                    {{ record.item }}
+                </div>
+            </div>
+        </div>
+    </ion-content>
+
+    <ion-footer-bar id="footerbar" class="bar bar-footer bar-clear">
+        <div class='button-bar'>
+            <a class='button button-positive icon-left ion-chevron-left' ng-click='goBack()'>Back</a>
+            <a class='button button-assertive icon-right ion-trash-a' ng-click='deleteData()'>Delete All Entries</a>
+        </div>
+    </ion-footer-bar>
+  </ion-view>

@@ -1,0 +1,2 @@
+//Android manifest might need
+android:theme="@android:style/Theme.Holo.Light.NoActionBar"
